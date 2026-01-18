@@ -8,7 +8,9 @@ jobs:
   run-custom-action:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Run custom action
-uses: tanishka1410/custom-action-challenge@main
+        uses: tanishka1410/custom-action-challenge
+
